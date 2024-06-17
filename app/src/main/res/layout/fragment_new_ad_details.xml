@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="6dp"
+    tools:context=".new_ad_details">
+
+    <Spinner
+        android:id="@+id/brand_spinner"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:popupBackground="@drawable/gradient_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/brand_spinner"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/brand_spinner" />
+
+    <EditText
+        android:id="@+id/descET"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleET"
+        app:layout_constraintStart_toStartOf="@+id/titleET"
+        app:layout_constraintTop_toBottomOf="@+id/titleET" />
+
+    <EditText
+        android:id="@+id/priceET"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/descET"
+        app:layout_constraintStart_toStartOf="@+id/descET"
+        app:layout_constraintTop_toBottomOf="@+id/descET" />
+
+    <Button
+        android:id="@+id/adNextB"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:drawableEnd="@android:drawable/ic_media_next"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="@+id/priceET"
+        app:layout_constraintStart_toStartOf="@+id/priceET"
+        app:layout_constraintTop_toBottomOf="@+id/priceET" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/curve_reactangle_night"
+        android:backgroundTint="@color/Blue300"
+        android:padding="6dp"
+        android:text="@string/brand"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
